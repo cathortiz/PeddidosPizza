@@ -93,4 +93,8 @@ public class Pizza {
         }
     }
     
+    public static void pruebaGithub(){
+        System.out.println("Estamos en gitHub!!");
+    }
+    
 }

@@ -23,6 +23,7 @@ public class PedidosPizza {
         p2.sirve();
         System.out.println("servidas: " + Pizza.getTotalServidas());
         System.out.println("pedidas: " + Pizza.getTotalPedidas());
+        Pizza.pruebaGithub();
     }
     
 }
