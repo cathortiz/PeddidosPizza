@@ -4,7 +4,7 @@
 package clases;
 
 /**
- * @author Admin
+ * @author Catherin
  */
 public enum Tipo {
     MARGARITA, CUATRO_QUESOS, FUNGHI;

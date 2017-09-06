@@ -20,7 +20,6 @@ public class Pizza {
     * Estado false = pedida / true = servida
     */
     private boolean estado;
-    
     public Pizza(){
         this.estado = false;
         this.tamaño = "mediana";
@@ -28,7 +27,6 @@ public class Pizza {
         totalPedidas += 1;        
     }
     /**
-     * 
      * @param tamaño String, indica el Tamaño de la Pizza
      * @param tipo Tipo, tipo de la clase Enum
      */
@@ -46,7 +44,6 @@ public class Pizza {
     public static int getTotalServidas() {
         return totalServidas;
     }
-
 
     public String getTamaño() {
         return tamaño;
@@ -72,6 +69,7 @@ public class Pizza {
         this.estado = estado;
     }
     
+    @Override
     public String toString(){
         String estadoString = "";
         if(estado){
@@ -82,7 +80,10 @@ public class Pizza {
         return ("pizza " + tipo + " " + tamaño + " " 
                 + estadoString).toLowerCase();
     }
-    
+    /*
+    * Sin parámetros, cambia el estado de la pizza si aún no 
+    * fue servida
+    */
     public void sirve(){
         if(estado){
             System.out.println("Esta pizza ya está servida");
